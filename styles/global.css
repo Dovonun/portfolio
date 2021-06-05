@@ -1,0 +1,61 @@
+:root {
+  --light: #ffccee;
+  --main: #ff00aa;
+  --dark: #330022;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark);
+}
+
+.line {
+  position: fixed;
+  top: 85vh;
+  left: 20vw;
+  width: 30vw;
+}
+
+.line > div {
+  position: relative;
+  border-bottom: 1px solid var(--light);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Thin.ttf);
+}
+.pageOneH1 {
+  position: absolute;
+  left: 20vw;
+  top: 15vh;
+  color: var(--light);
+  font-family: Poppins, thin;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .pageOneH1 {
+    top: 12vh;
+    font-size: 4rem;
+  }
+  .line {
+    top: 80vh;
+    width: 30vw;
+  }
+}
+@media (min-width: 992px) {
+  .pageOneH1 {
+    top: 10vh;
+    font-size: 7rem;
+  }
+  .line {
+    top: 70vh;
+    width: 20vw;
+  }
+}
