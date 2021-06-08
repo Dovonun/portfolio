@@ -92,9 +92,9 @@ export default function CanvasContainer(props) {
         size: 25,
       },
       stars: {
-        ammount: 70,
+        ammount: 100,
         restriction: (x, y) => x > -25 && x < 25 && y > -22 && y < -5,
-        spread: { xrange: 80, yrange: 100, zrange: 40 },
+        spread: { xrange: 200, yrange: 100, zrange: 40 },
       },
     };
   };

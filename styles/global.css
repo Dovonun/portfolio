@@ -42,7 +42,7 @@ html {
 @media (min-width: 768px) {
   .pageOneH1 {
     top: 12vh;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .line {
     top: 80vh;
