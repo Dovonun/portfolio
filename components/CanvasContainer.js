@@ -27,16 +27,34 @@ export default function CanvasContainer(props) {
   const [size, setSize] = useState([1920, 1080]);
 
   const getArgs = () => {
-    if (size[0] > 2000 && size[1] > 1200) {
+    if (size[0] > 1900 && size[1] > 992 && size[0] / size[1] > 2.2) {
       return {
         text: {
-          position: [-65, -15, 0],
-          value: "Severin Reifler",
-          size: 10,
+          position: [-65, -20, 0],
+          value: `Severin Reifler`,
+          size: 11,
         },
         tetrahedron: {
-          position: [50, -10, -80],
+          position: [45, -15, -80],
           size: 60,
+        },
+        stars: {
+          ammount: 150,
+          restriction: (x, y) => x > -65 && x < 50 && y > -30 && y < 10,
+          spread: { xrange: 300, yrange: 150, zrange: 100 },
+        },
+      };
+    }
+    if (size[0] > 1900 && size[1] > 992) {
+      return {
+        text: {
+          position: [-40, -16, 0],
+          value: "Severin Reifler",
+          size: 8,
+        },
+        tetrahedron: {
+          position: [35, -15, -80],
+          size: 40,
         },
         stars: {
           ammount: 150,

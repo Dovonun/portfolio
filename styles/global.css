@@ -52,10 +52,15 @@ html {
 @media (min-width: 992px) {
   .pageOneH1 {
     top: 10vh;
-    font-size: 7rem;
+    font-size: 5rem;
   }
   .line {
-    top: 70vh;
+    top: 80vh;
     width: 20vw;
+  }
+}
+@media (min-aspect-ratio: 21/9) {
+  .pageOneH1 {
+    font-size: 7rem;
   }
 }
