@@ -63,7 +63,7 @@ export default function CanvasContainer(props) {
         },
       };
     }
-    if (size[0] < 768 || size[1] < 900) {
+    if (size[0] < 768) {
       return {
         text: {
           position: [-10, -15, 0],
